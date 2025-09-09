@@ -1,3 +1,6 @@
-p {
-    color: red;
+@font-face {
+    font-family: "sansation";
+    src: url(./font/sansation/Sansation-Regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
