@@ -13,6 +13,8 @@
     --site-content-secondary-color: #eae8e0;
 
     --green-button-color: #228B22;
+
+    --current-selection-color: #79bfd6;
 }
 
 body {
@@ -104,7 +106,7 @@ button {
 .main-content > div {
     height: calc(100vh / 3);
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .about-site,
@@ -133,4 +135,41 @@ button {
     background-color: transparent;
     font-weight: 700;
     color: var(--green-button-color)
+}
+
+.sign-up-form p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1vw 0 0 0;
+}
+
+.sign-up-form > form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    width: 75%
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+
+    width: 20vw;
+    height: 4vw;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.form-input > input {
+    height: 4vh;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin: 0.2rem 0 0 0;
+}
+
+.form-input > input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px var(--current-selection-color);
 }
