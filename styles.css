@@ -11,6 +11,8 @@
 
     --site-content-primary-color: #f4f3ef;
     --site-content-secondary-color: #eae8e0;
+
+    --green-button-color: #228B22;
 }
 
 body {
@@ -19,12 +21,18 @@ body {
     padding: 0;
 
     height: 100vh;
-
-    font-family: "sansation", sans-serif;
 }
 
 * {
     box-sizing: border-box;
+    font-family: "sansation", sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
 }
 
 .sidebar {
@@ -96,7 +104,7 @@ body {
 .main-content > div {
     height: calc(100vh / 3);
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .about-site,
@@ -111,4 +119,18 @@ body {
 
 .about-site p:first-of-type{
     padding-top: 10vh;
+}
+
+.create-account-button {
+    background-color: var(--green-button-color);
+    color: white;
+    font-size: 1.2rem;
+    width: 10vw;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--green-button-color)
 }
