@@ -171,5 +171,10 @@ button {
 
 .form-input > input:focus {
     outline: none;
-    box-shadow: 0px 0px 5px 2px var(--current-selection-color);
+    box-shadow: 0px 0px 2px 1px var(--current-selection-color);
+}
+
+.form-input > label[for="password"] + input:invalid,
+.form-input > label[for="confirm_password"] + input:invalid {
+    box-shadow: 0px 0px 2px 1px red;
 }
